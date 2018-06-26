@@ -53,14 +53,9 @@ class PaperClassifier(object):
 		# 	'classifier__tol': [0.001, 0.0001],
 		# }
 		
-		# self.text_clf = LogisticRegression(penalty='l2')
-		# self.parameters_grid = {
-		# 	'classifier__tol': [0.001, 0.0001],
-		# }
-		
 		self.text_clf = LogisticRegression(penalty='l2')
 		self.parameters_grid = {
-			'classifier__tol': [0.001],
+			'classifier__tol': [0.001, 0.0001],
 		}
 		
 		self.thres_all = None
